@@ -1,0 +1,36 @@
+{
+  "name": "phore/jwt2",
+  "description": "Http client library for fast api access",
+  "keywords": ["Keyword1", "Keyword2"],
+  "homepage": "https://infracamp.org/phore/",
+  "license": "MIT",
+  "authors": [
+    { "name": "Matthias Leuffen", "email": "m@tth.es" }
+  ],
+  "repositories": [
+  ],
+  "require": {
+    "php": ">=8.1",
+    "firebase/php-jwt": "v6.10.1",
+    "brixlab/coder": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "Phore\\JWT2\\": "src/"
+    },
+    "files": [
+    ]
+  },
+  "suggest": {
+    "phore/cache": "Use request caching"
+  },
+  "minimum-stability": "dev",
+  "require-dev": {
+    "phore/tester": "*"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": false
+    }
+  }
+}
