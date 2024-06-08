@@ -24,13 +24,15 @@
   "suggest": {
     "phore/cache": "Use request caching"
   },
-  "minimum-stability": "dev",
+
   "require-dev": {
     "phore/tester": "*"
   },
   "config": {
+    "preferred-install": "source",
     "allow-plugins": {
       "php-http/discovery": false
     }
-  }
+  },
+  "minimum-stability": "dev"
 }
