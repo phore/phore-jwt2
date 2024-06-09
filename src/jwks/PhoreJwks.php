@@ -50,6 +50,21 @@ class PhoreJwks
     }
 
     /**
+     * Create a new symmectiric key and add it to the JWKS
+     * 
+     * @param string $keyId
+     * @param string $secret
+     * @return PhoreJwksSecretKey
+     */
+    public function createSymmetricKey(string $secret, string $keyId = null): PhoreJwksSecretKey
+    {
+        $symmetricKey = PhoreJwkFactory::createSymmetricKey($secret);
+        $this->addKey($symmetricKey, $keyId);
+        return $symmetricKey;
+    }
+    
+    
+    /**
      * @return PhoreJwksKey[]|PhoreJwksSecretKey[]
      */
     public function getKeys(): array
