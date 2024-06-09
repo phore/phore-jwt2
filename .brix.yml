@@ -1,6 +1,6 @@
 version: '1.0'
 coder:
-    exampleDir: ~
+    exampleDir: ./test/
     # Replace Example Dir wit relative path e.g. ./examples/ to benefit from brixcoder code completion
     include:
         - ./src/
